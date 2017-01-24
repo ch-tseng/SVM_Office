@@ -41,7 +41,7 @@ for imagePath in paths.list_images(args["training"]):
         data.append(H)
         labels.append(make)
 
-#開始用KNN模型來訓練
+#開始用SVM模型來訓練
 model = SVC(kernel="linear")
 #model = SVC(kernel="poly", degree=2, coef0=1)
 #傳入data及labels陣列開始訓練
